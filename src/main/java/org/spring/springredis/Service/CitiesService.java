@@ -32,6 +32,7 @@ public class CitiesService {
             citiesRepository.save(cities);
             return ResponseEntity.ok("Save request successful");
         }else {
+            System.out.println("Git için Deneme");
             return ResponseEntity.status(HttpStatus.CONFLICT).body("Save request failed. This city already exists");
         }
 
